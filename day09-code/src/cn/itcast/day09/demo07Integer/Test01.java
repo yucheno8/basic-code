@@ -1,4 +1,4 @@
-package cn.itcast.day09;
+package cn.itcast.day09.demo07Integer;
 
 /**
  * @author yucheno8
