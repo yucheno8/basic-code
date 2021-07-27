@@ -1,4 +1,4 @@
-package cn.itcast.day10.demo01;
+package cn.itcast.day10.demo01Abstract;
 
 /**
  * @author yucheno8
