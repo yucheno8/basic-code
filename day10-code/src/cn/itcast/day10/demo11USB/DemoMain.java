@@ -33,6 +33,10 @@ public class DemoMain {
         int a = 30;
         method(a); // 正确写法，int --> double
 
+        // x和y是不同的对象
+        Integer x = 1000, y = 1000;
+        System.out.println(x == y);
+
     }
 
     public static void method(double num) {
