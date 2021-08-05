@@ -6,9 +6,9 @@ package cn.itcast.day09.demo01Object;
  **/
 
 /*
- * java.lang.ObjectÀà
- * Àà Object ÊÇÀà²ã´Î½á¹¹µÄ¸ù£¨×î¶¥²ã£©Àà¡£Ã¿¸öÀà¶¼Ê¹ÓÃ Object ×÷Îª³¬£¨¸¸£©Àà
- * ËùÓĞ¶ÔÏó£¨°üÀ¨Êı×é£©¶¼ÊµÏÖÕâ¸öÀàµÄ·½·¨
+ * java.lang.Objectï¿½ï¿½
+ * ï¿½ï¿½ Object ï¿½ï¿½ï¿½ï¿½ï¿½Î½á¹¹ï¿½Ä¸ï¿½ï¿½ï¿½ï¿½î¶¥ï¿½ã£©ï¿½à¡£Ã¿ï¿½ï¿½ï¿½à¶¼Ê¹ï¿½ï¿½ Object ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ó£¨°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£©ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½
  */
 
 import java.util.ArrayList;
@@ -17,36 +17,36 @@ import java.util.Scanner;
 
 /*
     java.lang.Object
-    Àà Object ÊÇÀà²ã´Î½á¹¹µÄ¸ù(¸¸)Àà¡£
-    Ã¿¸öÀà(Person,Student...)¶¼Ê¹ÓÃ Object ×÷Îª³¬(¸¸)Àà¡£
-    ËùÓĞ¶ÔÏó£¨°üÀ¨Êı×é£©¶¼ÊµÏÖÕâ¸öÀàµÄ·½·¨¡£
+    ï¿½ï¿½ Object ï¿½ï¿½ï¿½ï¿½ï¿½Î½á¹¹ï¿½Ä¸ï¿½(ï¿½ï¿½)ï¿½à¡£
+    Ã¿ï¿½ï¿½ï¿½ï¿½(Person,Student...)ï¿½ï¿½Ê¹ï¿½ï¿½ Object ï¿½ï¿½Îªï¿½ï¿½(ï¿½ï¿½)ï¿½à¡£
+    ï¿½ï¿½ï¿½Ğ¶ï¿½ï¿½ó£¨°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é£©ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½
  */
 public class Demo01ToString{
     public static void main(String[] args) {
         /*
-            PersonÀàÄ¬ÈÏ¼Ì³ĞÁËObjectÀà,ËùÒÔ¿ÉÒÔÊ¹ÓÃObjectÀàÖĞµÄtoString·½·¨
-            String toString() ·µ»Ø¸Ã¶ÔÏóµÄ×Ö·û´®±íÊ¾¡£
-            ÖØĞ´Ç°£º´òÓ¡µÄÊÇ°üÃûÀàÃû@µØÖ·Öµ
-            ÖØĞ´ºó£º´òÓ¡µÄÊÇ¶ÔÏóÖĞµÄÊôĞÔÖµ
+            Personï¿½ï¿½Ä¬ï¿½Ï¼Ì³ï¿½ï¿½ï¿½Objectï¿½ï¿½,ï¿½ï¿½ï¿½Ô¿ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Objectï¿½ï¿½ï¿½Ğµï¿½toStringï¿½ï¿½ï¿½ï¿½
+            String toString() ï¿½ï¿½ï¿½Ø¸Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê¾ï¿½ï¿½
+            ï¿½ï¿½Ğ´Ç°ï¿½ï¿½ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½@ï¿½ï¿½Ö·Öµ
+            ï¿½ï¿½Ğ´ï¿½ó£º´ï¿½Ó¡ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½Öµ
          */
-        Person p = new Person("ÕÅÈı",18);
+        Person p = new Person("å°æ˜",18);
         String s = p.toString();
-        System.out.println(s);//cn.itheima.demo01.Object.Person@75412c2f | abc | Person{name=ÕÅÈı ,age=18}
+        System.out.println(s);//cn.itheima.demo01.Object.Person@75412c2f | abc | Person{name=ï¿½ï¿½ï¿½ï¿½ ,age=18}
 
-        //Ö±½Ó´òÓ¡¶ÔÏóµÄÃû×Ö,ÆäÊµ¾ÍÊÇµ÷ÓÃ¶ÔÏóµÄtoString  p=p.toString();
-        System.out.println(p);//cn.itheima.demo01.Object.Person@5f150435 | abc | Person{name=ÕÅÈı ,age=18}
+        //Ö±ï¿½Ó´ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½Êµï¿½ï¿½ï¿½Çµï¿½ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½toString  p=p.toString();
+        System.out.println(p);//cn.itheima.demo01.Object.Person@5f150435 | abc | Person{name=ï¿½ï¿½ï¿½ï¿½ ,age=18}
 
-        //¿´Ò»¸öÀàÊÇ·ñÖØĞ´ÁËtoString,Ö±½Ó´òÓ¡Õâ¸öÀàµÄ¶ÔÏó¼´¿É,Èç¹ûÃ»ÓĞÖØĞ´toString·½·¨ÄÇÃ´´òÓ¡µÄÊÇ¶ÔÏóµÄµØÖ·Öµ
+        //ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½Ç·ï¿½ï¿½ï¿½Ğ´ï¿½ï¿½toString,Ö±ï¿½Ó´ï¿½Ó¡ï¿½ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ó¼´¿ï¿½,ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½Ğ´toStringï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã´ï¿½ï¿½Ó¡ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½ï¿½Äµï¿½Ö·Öµ
         Random r = new Random();
-        System.out.println(r);//java.util.Random@3f3afe78  Ã»ÓĞÖØĞ´toString·½·¨
+        System.out.println(r);//java.util.Random@3f3afe78  Ã»ï¿½ï¿½ï¿½ï¿½Ğ´toStringï¿½ï¿½ï¿½ï¿½
 
         Scanner sc = new Scanner(System.in);
-        System.out.println(sc);//java.util.Scanner[delimiters=\p{javaWhitespace}+..  ÖØĞ´toString·½·¨
+        System.out.println(sc);//java.util.Scanner[delimiters=\p{javaWhitespace}+..  ï¿½ï¿½Ğ´toStringï¿½ï¿½ï¿½ï¿½
 
         ArrayList<Integer> list = new ArrayList<>();
         list.add(1);
         list.add(2);
         list.add(3);
-        System.out.println(list);//[1, 2, 3]  ÖØĞ´toString·½·¨
+        System.out.println(list);//[1, 2, 3]  ï¿½ï¿½Ğ´toStringï¿½ï¿½ï¿½ï¿½
     }
 }

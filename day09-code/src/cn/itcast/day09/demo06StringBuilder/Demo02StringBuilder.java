@@ -6,38 +6,38 @@ package cn.itcast.day09.demo06StringBuilder;
  **/
 
 /*
-    StringBuilderÀàµÄ³ÉÔ±·½·¨£º
-        public StringBuilder append(...)£ºÌí¼ÓÈÎÒâÀàÐÍÊý¾ÝµÄ×Ö·û´®ÐÎÊ½£¬²¢·µ»Øµ±Ç°¶ÔÏó×ÔÉí¡£
-        ²ÎÊý£º
-            ¿ÉÒÔÊÇÈÎÒâµÄÊý¾ÝÀàÐÍ
+    StringBuilderï¿½ï¿½Ä³ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        public StringBuilder append(...)ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ýµï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½Ç°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+            ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
  */
 public class Demo02StringBuilder {
     public static void main(String[] args) {
-        // ´´½¨Ò»¸öStringBuilder¶ÔÏó
+        // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½StringBuilderï¿½ï¿½ï¿½ï¿½
         StringBuffer bu1 = new StringBuffer();
-        // Ê¹ÓÃappend·½·¨ÍùStringBuilderÖÐÌí¼ÓÊý¾Ý
-        // append·½·¨·µ»ØµÄÊÇthis£¬µ÷ÓÃ·½·¨µÄ¶ÔÏóbu1
+        // Ê¹ï¿½ï¿½appendï¿½ï¿½ï¿½ï¿½ï¿½ï¿½StringBuilderï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        // appendï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Øµï¿½ï¿½ï¿½thisï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½Ä¶ï¿½ï¿½ï¿½bu1
         StringBuffer bu2 = bu1.append("abc");
         System.out.println(bu1);
         System.out.println(bu2);
-        System.out.println(bu1 == bu2); // true Á½¸ö¶ÔÏóÊ±Í¬Ò»¸ö¶ÔÏó
+        System.out.println(bu1 == bu2); // true ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±Í¬Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
-        // Ê¹ÓÃappend·½·¨ÎÞÐè½ÓÊÕ·µ»ØÖµ
+        // Ê¹ï¿½ï¿½appendï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ·ï¿½ï¿½ï¿½Öµ
         /*
         bu1.append("abc");
         bu1.append(1);
         bu1.append(true);
         bu1.append(8.8);
-        bu1.append('ÖÐ');
-        System.out.println(bu1); // abcabc1true8.8ÖÐ
+        bu1.append('ï¿½ï¿½');
+        System.out.println(bu1); // abcabc1true8.8ï¿½ï¿½
         */
 
         /*
-            Á´Ê½±à³Ì£º·½·¨µÄ·µ»ØÖµÊÇÒ»¸ö¶ÔÏó£¬¿ÉÒÔ¸ù¾Ý¶ÔÏó¼ÌÐøµ÷ÓÃ·½·¨
+            ï¿½ï¿½Ê½ï¿½ï¿½Ì£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Öµï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ó£¬¿ï¿½ï¿½Ô¸ï¿½ï¿½Ý¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
          */
         System.out.println("abc".toUpperCase().toLowerCase().toUpperCase().toLowerCase().toUpperCase());
-        bu1.append("abc").append(1).append(true).append(8.8).append('ÖÐ');
+        bu1.append("abc").append(1).append(true).append(8.8).append("å“ˆå“ˆ");
         System.out.println(bu1);
     }
 }
