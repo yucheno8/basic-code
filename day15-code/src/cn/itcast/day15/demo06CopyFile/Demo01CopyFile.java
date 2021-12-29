@@ -32,7 +32,8 @@ public class Demo01CopyFile {
         FileOutputStream fos = new FileOutputStream("d:\\1.jpg");
         // 一次读取一个字节写入一个字节的方式
         // 3. 使用字节输入流中的方法read()读取文件
-        /*int len = 0;
+
+        /* int len = 0;
         while ((len = fis.read()) != -1) {
             // 4. 使用字节输出流中的方法write()，把读取到的字节写入到目的地的文件中
             fos.write(len);
@@ -41,7 +42,7 @@ public class Demo01CopyFile {
         // 使用数组缓冲读取多个字节，写入多个字节
         byte[] bytes = new byte[1024];
         // 3. 使用字节输入流中的方法read()读取文件
-        int len = 0;
+        int len = 0; // 每次读取的有效字节个数
         while ((len = fis.read(bytes)) != -1) {
             // 4. 使用字节输出流中的方法write()，把读取到的字节写入到目的地的文件中
             fos.write(bytes,0,len);
