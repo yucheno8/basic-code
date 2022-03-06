@@ -55,10 +55,10 @@ public class CalculatorTest {
         // 1. 创建计算器对象
         Calculator c = new Calculator();
         // 2. 调用add方法
-        int result = c.add(1, 2);
+        int result = c.sub(1, 2);
         System.out.println("testSub...");
 
-        // 3. 断言 我断言这个结果是3
+        // 3. 断言 我断言这个结果是-1
         Assert.assertEquals(-1, result);
     }
 }
