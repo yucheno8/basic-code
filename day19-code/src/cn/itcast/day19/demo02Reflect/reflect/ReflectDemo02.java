@@ -54,6 +54,8 @@ public class ReflectDemo02 {
         }
 
         System.out.println("------------");
+
+        // Field getField(String name)  获取指定名称的Public修饰的成员变量
         Field a = personClass.getField("a");
         // 获取成员变量a的值
         Person p = new Person();
@@ -62,5 +64,19 @@ public class ReflectDemo02 {
         // 设置成员变量a的值
         a.set(p, "Hello");
         System.out.println(p);
+        System.out.println("============");
+
+        // Field[] getDeclaredFields()  获取所有的成员变量，不考虑修饰符
+        Field[] declaredFields = personClass.getDeclaredFields();
+        for (Field declaredField : declaredFields) {
+            System.out.println(declaredField);
+        }
+
+        // Field getDeclaredField(String name)
+        Field d = personClass.getDeclaredField("d");
+        // 忽略访问权限修饰符的安全检查
+        d.setAccessible(true); // 暴力反射
+        Object value2 = d.get(p);
+        System.out.println(value2);
     }
 }
